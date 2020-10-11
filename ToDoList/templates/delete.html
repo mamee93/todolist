@@ -1,0 +1,6 @@
+<p>Are you sure you want to delete "{{Dlist}}"</p>
+<a href="{% url 'delete_list' Dlist.id %}">Cancel</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Comfirm">
+</form>
